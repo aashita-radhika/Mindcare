@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -85,14 +83,6 @@
             if (!response.ok) {
                 errorElement.textContent = data.msg || "Signup failed!";
             } else {
-                // if (action === "signup") {
-                //     container.classList.remove("right-panel-active"); // Go to login view
-                // } else {
-                //     localStorage.setItem("username", data.username);
-                //     // Save token to localStorage
-                //     localStorage.setItem("token", data.token);
-                //     window.location.href = "/MindCare"; // Go to home page
-                // }
                 window.alert("User Created Successfully!🎉");
                 localStorage.setItem("token", data.token);
                 container.classList.remove("right-panel-active");
